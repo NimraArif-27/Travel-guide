@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ExploreTheWorld - Travel Tips</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+    color: #3a0865;
+  }
+  header {
+    background: #5a3ea8;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  header h1 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.75rem;
+    letter-spacing: 2px;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  nav a:hover {
+    color: #d7b2ff;
+  }
+  section {
+    padding: 60px 40px;
+    width: 1000px;
+    margin: auto;
+  }
+  .hero {
+    width: 100%;
+    background: linear-gradient(rgba(90,62,168,0.8), rgba(90,62,168,0.8)), url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  .hero h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+  }
+  .hero p {
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: auto;
+  }
+  .tips-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 30px;
+    margin-top: 40px;
+  }
+  .tip-box {
+    background: #e6dbff;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(90, 62, 168, 0.3);
+    padding: 25px 20px;
+    transition: background 0.3s, transform 0.3s;
+    cursor: default;
+  }
+  .tip-box:hover {
+    background: #d0b3ff;
+    transform: translateY(-5px);
+  }
+  .tip-icon {
+    font-size: 40px;
+    color: #5a3ea8;
+    margin-bottom: 15px;
+  }
+  .tip-box h3 {
+    margin-bottom: 10px;
+    color: #3a0865;
+  }
+  .tip-box p {
+    font-weight: 500;
+    line-height: 1.4;
+  }
+  .extra-tips {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    background: #7f65c1;
+    color: white;
+    border-radius: 15px;
+    padding: 40px 30px;
+  }
+  .extra-tips h2 {
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .extra-tips ul {
+    list-style-type: square;
+    padding-left: 20px;
+  }
+  .extra-tips ul li {
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+  footer {
+    background: #3a0865;
+    color: #fff;
+    padding: 20px 40px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  @media (max-width: 700px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    .video-tip video {
+      width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>ExploreTheWorld</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="tips.html">Tips</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Top Travel Tips for Your Journey</h2>
+  <p>Prepare well and travel smarter with our essential tips for packing, staying safe, budgeting, and immersing yourself in new cultures.</p>
+</section>
+
+<section>
+  <div class="tips-list">
+    <div class="tip-box" title="Packing Tips">
+      <div class="tip-icon">🎒</div>
+      <h3>Packing Smart</h3>
+      <p>Pack light with versatile clothing and always include a travel first-aid kit and portable charger.</p>
+    </div>
+    <div class="tip-box" title="Safety Tips">
+      <div class="tip-icon">🛡️</div>
+      <h3>Stay Safe</h3>
+      <p>Keep your belongings secure, be aware of your surroundings, and always have emergency contacts handy.</p>
+    </div>
+    <div class="tip-box" title="Money Tips">
+      <div class="tip-icon">💳</div>
+      <h3>Manage Your Money</h3>
+      <p>Use a mix of cash and cards, notify your bank before travel, and keep copies of important documents.</p>
+    </div>
+    <div class="tip-box" title="Health Tips">
+      <div class="tip-icon">💊</div>
+      <h3>Health Essentials</h3>
+      <p>Stay hydrated, get vaccines if needed, and carry basic medicines to avoid common ailments.</p>
+    </div>
+    <div class="tip-box" title="Culture Tips">
+      <div class="tip-icon">🌍</div>
+      <h3>Respect Cultures</h3>
+      <p>Learn local customs, basic language phrases, and dress codes to make meaningful connections.</p>
+    </div>
+  </div>
+</section>
+
+<section class="extra-tips">
+  <h2>Additional Quick Tips</h2>
+  <ul>
+    <li>Always make photocopies of your passport and documents.</li>
+    <li>Keep a digital copy of your itinerary and bookings.</li>
+    <li>Try local foods and be open to new experiences.</li>
+    <li>Download offline maps and travel apps before you go.</li>
+    <li>Buy travel insurance for peace of mind.</li>
+  </ul>
+</section>
+
+<footer>
+  &copy; 2024 ExploreTheWorld - Your trusted travel guide | Designed with ♥ in purple and white
+</footer>
+</body>
+</html>

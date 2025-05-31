@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ExploreTheWorld - Destinations</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+    color: #3a0865;
+  }
+  header {
+    background: #5a3ea8;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  header h1 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.75rem;
+    letter-spacing: 2px;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  nav a:hover {
+    color: #d7b2ff;
+  }
+  section {
+    padding: 60px 40px;
+    max-width: 100%;
+    margin: auto;
+  }
+  .hero {
+    background: linear-gradient(rgba(90,62,168,0.7), rgba(90,62,168,0.7)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  .hero h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+  }
+  .hero p {
+    font-size: 1.3rem;
+    max-width: 900px;
+    margin: auto;
+  }
+  .region-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+  }
+  .region-card {
+    background: #e6dbff;
+    border-radius: 15px;
+    width: 270px;
+    box-shadow: 0 0 20px rgba(90, 62, 168, 0.3);
+    transition: background 0.3s, transform 0.3s;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .region-card:hover {
+    background: #d0b3ff;
+    transform: translateY(-8px);
+  }
+  .region-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  .region-card h3 {
+    margin: 15px;
+    color: #3a0865;
+  }
+  .region-card p {
+    margin: 0 15px 15px;
+    font-weight: 500;
+  }
+  .video-map {
+    text-align: center;
+  }
+  .video-map video {
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(90, 62, 168, 0.6);
+  }
+  .destinations-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    gap: 20px;
+  }
+  .destinations-gallery img {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(90, 62, 168, 0.4);
+    transition: transform 0.3s;
+  }
+  .destinations-gallery img:hover {
+    transform: scale(1.05);
+  }
+  footer {
+    background: #3a0865;
+    color: #fff;
+    padding: 20px 40px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  @media (max-width: 700px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    .region-list {
+      justify-content: center;
+    }
+    .video-map video {
+      width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>ExploreTheWorld</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="tips.html">Tips</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Discover Amazing Destinations</h2>
+  <p>From tropical beaches to majestic mountains and vibrant cities — Explore the world’s top travel spots. Find your next adventure here!</p>
+</section>
+
+<section>
+  <h2 style="text-align:center; margin-bottom:40px;">Explore by Region</h2>
+  <div class="region-list">
+    <div class="region-card">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Asia" />
+      <h3>Asia</h3>
+      <p>Experience rich culture, ancient temples, and stunning landscapes.</p>
+    </div>
+    <div class="region-card">
+      <img src="https://www.pandotrip.com/wp-content/uploads/2018/06/Eiffel-Tower-Paris-France.jpg" alt="Europe" />
+      <h3>Europe</h3>
+      <p>Walk through historic cities, scenic countryside, and cozy villages.</p>
+    </div>
+    <div class="region-card">
+      <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=600&q=80" alt="Africa" />
+      <h3>Africa</h3>
+      <p>Discover wildlife safaris, deserts, and exotic cultures.</p>
+    </div>
+    <div class="region-card">
+      <img src="https://images.unsplash.com/photo-1470770903676-69b98201ea1c?auto=format&fit=crop&w=600&q=80" alt="South America" />
+      <h3>South America</h3>
+      <p>Explore the Amazon rainforest, Andes mountains, and vibrant cities.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 style="text-align:center; margin-bottom:40px;">Nature & Cities Highlights</h2>
+  <div class="destinations-gallery">
+    <img src="https://images.stockcake.com/public/4/4/0/440603c9-e9cd-4513-8b94-17e3609bb093_large/city-night-lights-stockcake.jpg" alt="Nature Waterfall" />
+    <img src="https://specnwt.s3.ca-central-1.amazonaws.com/wp-content/uploads/2023/09/10001310/big-city-lights-aurora-header_opt.jpg" alt="Mountain City" />
+    <img src="https://www.thenakedscientists.com/sites/default/files/styles/social-media-large/public/media/citylights.jpg?itok=OMVF7RjE" alt="Old Town" />
+    <img src="https://www.hellobc.com/content/uploads/2018/01/112274_PowerPoint-2000px-2000x1000.jpg" alt="Beach Resort" />
+  </div>
+</section>
+
+<section>
+  <h2 style="text-align:center; margin-bottom:40px;">Cultural Wonders</h2>
+  <div class="region-list">
+    <div class="region-card">
+      <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=600&q=80" alt="Ancient Ruins" />
+      <h3>Ancient Ruins</h3>
+      <p>Step back in time and explore historical ruins worldwide.</p>
+    </div>
+    <div class="region-card">
+      <img src="https://da37ptofyxygh.cloudfront.net/story1/450/d92556ca925b643dfd668870843099735102_1280x720.jpg" alt="Festivals" />
+      <h3>Festivals</h3>
+      <p>Experience colorful festivals and vibrant traditions globally.</p>
+    </div>
+    <div class="region-card">
+      <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=600&q=80" alt="Museums" />
+      <h3>Museums</h3>
+      <p>Discover art, history, and culture curated in world-class museums.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2024 ExploreTheWorld - Your trusted travel guide | Designed with ♥ in purple and white
+</footer>
+</body>
+</html>
+
